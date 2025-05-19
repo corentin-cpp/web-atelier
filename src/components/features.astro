@@ -1,0 +1,71 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Création de Site Web",
+    description:
+      "Des sites vitrines modernes, performants et responsive, pensés pour valoriser votre activité et convertir vos visiteurs.",
+    icon: "lucide:laptop",
+  },
+  {
+    title: "Identité Visuelle & Branding",
+    description:
+      "Logo, charte graphique, typographie et couleurs harmonisées pour une image de marque forte et cohérente.",
+    icon: "lucide:palette",
+  },
+  {
+    title: "Photographie Professionnelle",
+    description:
+      "Mettez vos produits, locaux ou équipes en valeur avec des clichés de qualité, adaptés au web et aux supports print.",
+    icon: "lucide:camera",
+  },
+  {
+    title: "Accompagnement Commercial",
+    description:
+      "Stratégie de vente, ciblage client, argumentaire, scripts et outils adaptés à votre marché pour booster vos résultats.",
+    icon: "lucide:target",
+  },
+  {
+    title: "SEO & Référencement",
+    description:
+      "Optimisation de votre contenu et de votre structure pour remonter dans les résultats de recherche.",
+    icon: "lucide:search",
+  },
+  {
+    title: "Maintenance & Support",
+    description:
+      "On s’occupe de tout : mises à jour, sécurité, sauvegardes et assistance continue. Votre site reste performant dans le temps.",
+    icon: "lucide:life-buoy",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Nos Services
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    L'Atelier du Web vous accompagne de A à Z dans votre présence en ligne.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
