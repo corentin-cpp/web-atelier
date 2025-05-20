@@ -6,70 +6,69 @@ import PricingCard from "@/components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Simple",
+    price: "500€",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "1 Shooting Photo simple pour votre site",
+      "Un site vitrine de 3 pages maximum",
+      "Un nom de domaine et un hébergement inclus la première année",
+      "Un site optimisé pour le référencement naturel",
+      "Services de maintenance et de mise à jour 1 à 2 fois par an",
+      "Conseils et recommandations pour améliorer votre visibilité en ligne",
+      "Un accompagnement pour la recherche commerciale",
     ],
     button: {
-      text: "Get Started",
+      text: "En Savoir plus",
       link: "/",
     },
   },
   {
-    name: "Startup",
-    price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
-    },
+    name: "Professionnel",
+    price: "1250€",
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "Shooting photo et vidéo simple pour votre site et réseaux sociaux",
+      "Un site vitrine de 10 pages maximum",
+      "Un nom de domaine et un hébergement inclus la première année",
+      "Un site optimisé pour le référencement naturel",
+      "Conseils et recommandations pour améliorer votre visibilité en ligne",
+      "Services de maintenance et de mise à jour 1 à 6 fois par an",
+      "Un accompagnement pour la recherche commerciale",
+      "Un accompagnement pour la création de votre site",
     ],
     button: {
-      text: "Get Started",
+      text: "En Savoir plus",
       link: "#",
     },
   },
   {
     name: "Enterprise",
-    price: "Custom",
+    price: "À partir de 2500€",
     popular: false,
     features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Shooting photo et vidéo sur une journée, 100% personnalisé",
+      "Un site vitrine de 20 pages maximum 100% sur mesure",
+      "Un nom de domaine et un hébergement inclus la première année",
+      "Un site optimisé pour le référencement naturel",
+      "Services de maintenance et de mise à jour 1 à 12 fois par an",
+      "Un accompagnement pour la recherche commerciale",
+      "Un accompagnement pour la création de votre site",
     ],
     button: {
-      text: "Contact us",
+      text: "Nous contacter",
       link: "/contact",
     },
   },
 ];
 ---
 
-<Layout title="Pricing">
+<Layout title="Tarifs">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">Tarifs</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        Découvrez nos offres de création de sites web et de shooting photo
       </Fragment>
     </Sectionhead>
 
