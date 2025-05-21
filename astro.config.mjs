@@ -4,9 +4,9 @@ import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 
-// https://astro.build/config
 export default defineConfig({
-  site: "https://astro.build",
+  site: "https://www.lestudioduweb.fr", // ton vrai domaine
+  base: "/", // chemins relatifs à la racine
   integrations: [mdx(), sitemap(), icon()],
   vite: {
     plugins: [tailwindcss()],
